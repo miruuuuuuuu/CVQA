@@ -1,0 +1,21 @@
+{
+  "model": "ResNet-50 + Patch Quality Head",
+  "frames": 16,
+  "patch_grid": "7x7",
+  "patches_per_frame": 49,
+  "patch_size": 64,
+  "spatial_pooling": "average",
+  "temporal_pooling": "average",
+  "targets": [
+    "TSV",
+    "B",
+    "SR",
+    "S",
+    "U",
+    "O"
+  ],
+  "freeze_backbone": true,
+  "epochs": 2,
+  "learning_rate": 0.001,
+  "seed": 42
+}

@@ -1,0 +1,38 @@
+{
+  "model": "M1_CNN_LSTM",
+  "architecture": "16 frames -> ResNet-50 -> 2048-D frame features -> LSTM -> 6 regression outputs",
+  "num_frames": 16,
+  "sampling": "uniform",
+  "image_size": 224,
+  "resnet": "ResNet-50 pretrained",
+  "resnet_feature_dim": 2048,
+  "resnet_frozen": true,
+  "lstm_hidden": 256,
+  "lstm_layers": 1,
+  "dropout": 0.3,
+  "batch_size": 8,
+  "epochs_max": 20,
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "early_stopping_patience": 5,
+  "targets": [
+    "TSV",
+    "B",
+    "SR",
+    "S",
+    "U",
+    "O"
+  ],
+  "target_columns": {
+    "TSV": "TSV",
+    "B": "B",
+    "SR": "SR",
+    "S": "S",
+    "U": "U",
+    "O": "O"
+  },
+  "seed": 42,
+  "train_csv": "/kaggle/input/datasets/miruthulajmm/cv-stqa-configuration-split/train.csv",
+  "val_csv": "/kaggle/input/datasets/miruthulajmm/cv-stqa-configuration-split/val.csv",
+  "test_csv": "/kaggle/input/datasets/miruthulajmm/cv-stqa-configuration-split/test.csv"
+}

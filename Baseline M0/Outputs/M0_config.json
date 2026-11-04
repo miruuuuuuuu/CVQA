@@ -1,0 +1,22 @@
+{
+  "model": "ResNet-50 ImageNet pretrained + temporal mean pooling + MLP regression",
+  "num_frames": 16,
+  "feature_dim": 2048,
+  "image_size": 224,
+  "hidden_dim": 512,
+  "dropout": 0.3,
+  "optimizer": "AdamW",
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "epochs_max": 50,
+  "early_stopping_patience": 10,
+  "seed": 42,
+  "targets": [
+    "TSV",
+    "Brightness",
+    "Specular",
+    "Stability",
+    "Utility",
+    "Overall"
+  ]
+}
