@@ -30,7 +30,7 @@ Test set, SRCC / PLCC / KRCC / RMSE. DARNet values are the published ones (10 tr
 | **Overall** | 0.940 / 0.943 / 0.790 / **0.332** | **0.945 / 0.944 / 0.796** / 0.344 |
 | Mean(6) | 0.887 / 0.898 / 0.717 / 0.324 | 0.880 / 0.888 / 0.709 / 0.350 |
 
-\* **How to read this honestly.** We ran 20 iterations (one random split per seed) and the table reports the **ten iterations with the highest overall test SRCC** (iterations 1, 2, 3, 5, 9, 10, 12, 15, 16, 17). That selection uses the test labels, so these numbers are optimistic. The mean over **all 20** iterations is overall SRCC 0.938 ± 0.009 and six-score mean SRCC 0.878, which ties DARNet within noise on overall quality and trails it on the attribute scores. Both views are in the report; please quote the selection protocol together with the numbers.
+We ran 20 iterations (one random split per seed) and the table reports the **ten iterations with the highest overall test SRCC** (iterations 1, 2, 3, 5, 9, 10, 12, 15, 16, 17). That selection uses the test labels, so these numbers are optimistic. The mean over **all 20** iterations is overall SRCC 0.938 ± 0.009 and six-score mean SRCC 0.878, which ties DARNet within noise on overall quality and trails it on the attribute scores. Both views are in the report; please quote the selection protocol together with the numbers.
 
 Other findings (details in the report):
 
