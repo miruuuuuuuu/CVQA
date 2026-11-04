@@ -118,6 +118,3 @@ If you use this work, please also cite the source of the database and the baseli
 }
 ```
 
-## 10. License
-
-Add your licence here (for example MIT for the code). The MAC-VQA videos and MOS remain under the licence of their original authors; no patient data is included in this repository.
